@@ -6,10 +6,6 @@
 * \date Criação: Jul/2012
 * Fica a escuta de diversos Clientes tanto produtores como consumidores */
 
-  
-    
-
-
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -21,6 +17,7 @@
 #include <sys/ioctl.h>
 #include <pthread.h>
 #include <itoa.h>
+//testando
 
     /* Declaraçao da fila */
     int fila[999];
