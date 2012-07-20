@@ -4,7 +4,7 @@
 * \author Willian Alves
 * \version 0001
 * \date Criação: Jul/2012
-* Fica a escuta de diversos Clientes tanto produtores como consumidores */
+* Fica a escuta de diversos Clientes tanto produtores quanto consumidores */
 
 #include <string.h>
 #include <stdlib.h>
@@ -17,9 +17,8 @@
 #include <sys/ioctl.h>
 #include <pthread.h>
 #include <itoa.h>
-//testando
-//testando mais uma vez
-    /* Declaraçao da fila */
+    
+	/* Declaraçao da fila */
     int fila[999];
     /* Contador das POSIÇÕES da FILA */
     int contfila=0;

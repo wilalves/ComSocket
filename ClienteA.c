@@ -4,9 +4,7 @@
 * \author Willian Alves
 * \version 0001
 * \date Criação: Jul/2012
-* envia buffer para serem INSERIDOS na FILA 
-   ************* Ja é*************/
-
+* envia buffer para serem INSERIDOS na FILA*/
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -30,8 +28,8 @@
 	    socklen_t addrlen = sizeof (serv_addrA);
 	    /* Socket familia TCP declarado SOCK_STREAM e criado */
 	    clienteSockfdA = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
-	   /** Verifica a Conexão */
-       if (clienteSockfdA < 0)
+	    /** Verifica a Conexão */
+        if (clienteSockfdA < 0)
 	    {
 	        printf("Erro no Socket\n");
 	        exit(1);
@@ -44,7 +42,7 @@
 	    serv_addrA.sin_addr.s_addr = inet_addr("10.60.69.140");
 	    /* Define a porta de conexao */
 	    serv_addrA.sin_port = htons(6666);
-	   /* Verifica e Faz a conexao com o servidor */
+	    /* Verifica e Faz a conexao com o servidor */
 	    if(connect(clienteSockfdA,(struct sockaddr *)&serv_addrA, addrlen) < 0)
 	     {
 	            printf("Erro no Socket\n");
@@ -53,8 +51,8 @@
 	        return clienteSockfdA;
 		 }
          /** Troca mensagens com o Servidor */
-		void ClienteA(int clienteSockfdA)
-		{
+		 void ClienteA(int clienteSockfdA)
+		 {
 	      /** Buffer de dados a ser mandado para o servidor e a RECEBER */
 	      char buffer_para_servidor[256] = "";
           char buffer_do_clienteA[256] = "";

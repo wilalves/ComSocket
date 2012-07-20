@@ -6,10 +6,6 @@
 * \date Criação: Jul/2012
 * envia buffer para serem RETIRADOS da FILA */
 
-
-
-
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
